@@ -13,7 +13,8 @@ header #logo{
 
 #logo img{
 	display: block;
-	margin-left: 3em;
+	float: left;
+	margin-left: 15%;
 	margin-right: auto;
 	width: 200px;
 	height: 200px;
