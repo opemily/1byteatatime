@@ -13,7 +13,7 @@ header #logo{
 
 #logo img{
 	display: block;
-	margin-left: 2em;
+	margin-left: 3em;
 	margin-right: auto;
 	width: 200px;
 	height: 200px;
@@ -59,6 +59,19 @@ header #logo{
 	font: 1em Helvetica,sans-serif;
 }
 
+#services-offered h5{
+	display: block;
+	text-align: justify;
+	margin-top: 0px;
+	margin-left: 15%;
+	margin-right: 15%git;
+	margin-bottom: 0px;
+	font: bold 1em 'Share Tech Mono',Helvetica,sans-serif;
+	color: rgb(52,157,235);
+	text-shadow: 0 2px 3px #000;
+	
+}
+
 #services-offered ul{
 	display: block;
 	text-align: justify;
@@ -67,5 +80,5 @@ header #logo{
 	margin-right: 15%git;
 	margin-bottom: 0px;
 	font: 1em Helvetica,sans-serif;
-}
+	color:rgb(41,123,184);
 }
