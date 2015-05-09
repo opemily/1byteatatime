@@ -31,7 +31,7 @@ header #logo{
 	text-indent: 15%;
 }
 
-#about span{
+#about p{
 	display: block;
 	text-align: justify;
 	margin-top: 0px;
@@ -41,3 +41,31 @@ header #logo{
 	font: 1em Helvetica,sans-serif;
 }
 
+#services-offered h4{
+	font: bold 1em 'Share Tech Mono',Helvetica,sans-serif;
+	color: rgb(52,157,235);
+	text-shadow: 0 2px 3px #000;
+	text-align: justify;
+	text-indent: 15%;
+}
+
+#services-offered p{
+	display: block;
+	text-align: justify;
+	margin-top: 0px;
+	margin-left: 15%;
+	margin-right: 15%git;
+	margin-bottom: 0px;
+	font: 1em Helvetica,sans-serif;
+}
+
+#services-offered ul{
+	display: block;
+	text-align: justify;
+	margin-top: 0px;
+	margin-left: 15%;
+	margin-right: 15%git;
+	margin-bottom: 0px;
+	font: 1em Helvetica,sans-serif;
+}
+}
