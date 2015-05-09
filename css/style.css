@@ -67,7 +67,7 @@ header #logo{
 	margin-right: 15%git;
 	margin-bottom: 0px;
 	font: bold 1em 'Share Tech Mono',Helvetica,sans-serif;
-	color: rgb(52,157,235);
+	color: rgb(41,123,184);
 	text-shadow: 0 2px 3px #000;
 	
 }
@@ -99,3 +99,39 @@ header #logo{
 	margin-right: 15%git;
 	margin-bottom: 0px;
 	font: italic 1em Helvetica,sans-serif;
+}
+
+#contact h4{
+	font: bold 1em 'Share Tech Mono',Helvetica,sans-serif;
+	color: rgb(52,157,235);
+	text-shadow: 0 2px 3px #000;
+	text-align: justify;
+	text-indent: 15%;
+}
+
+#contact form{
+	display:block;
+	text-indent: 17%;
+}
+
+#contact form>label{
+	font: bold 1em 'Share Tech Mono',Helvetica,sans-serif;
+	color: rgb(41,123,184);
+	text-shadow: 0 2px 3px #000;
+	text-align: justify;
+}
+
+#useful-links h4{
+	font: bold 1em 'Share Tech Mono',Helvetica,sans-serif;
+	color: rgb(52,157,235);
+	text-shadow: 0 2px 3px #000;
+	text-align: justify;
+	text-indent: 15%;
+}
+
+#useful-links a{
+	font: bold 1em 'Share Tech Mono',Helvetica,sans-serif;
+	display:block;
+	text-align: justify;
+	text-indent: 17%;
+}
