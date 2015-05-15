@@ -1,9 +1,13 @@
 @import url(http://fonts.googleapis.com/css?family=Share+Tech+Mono);
 
+/*///////////////////////STYLE///////////////////////////////////*/
+
 body{
 	background:grey;
 }
-
+.container{
+	background:rgb(244,244,244);
+}
 header{
 	font: bold 1em 'Share Tech Mono',Helvetica,sans-serif;
 	color: rgb(52,157,235);
@@ -12,35 +16,38 @@ header{
 	text-indent: 15%;
 }
 
+#logo img{
+	display: block;
+	float: left;
+	margin:2%;
+	width: 300px;
+	height: 300px;
+
+}
+#logo h1, h2{
+	display:block;
+	float:left;
+}
+
+nav{
+	float:left;
+	display:block;
+	font: bold 1em 'Share Tech Mono',Helvetica,sans-serif;
+}
+
 h4{
 	font: bold 1em 'Share Tech Mono',Helvetica,sans-serif;
 	color: rgb(52,157,235);
 	text-shadow: 0 2px 3px #000;
 	text-align: justify;
-	text-indent: 15%;
 }
 
- p{
+p{
 	text-align: justify;
 	margin: 0px 15%;
 	font: 1em Helvetica,sans-serif;
 }
 
-#logo img{
-	display: block;
-	float: left;
-	margin-left: 15%;
-	margin-right: auto;
-	width: 200px;
-	height: 200px;
-}
-
-nav{
-	clear:left;
-	display:block;
-	text-align: center;
-	font: bold 1em 'Share Tech Mono',Helvetica,sans-serif;
-}
 
 
 
@@ -98,3 +105,50 @@ nav{
 }
 
 /* /////////////////////////// Layout //////////////////////*/
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+}
+
+.row {
+  display: block;
+  clear: both;
+  margin-bottom: 2%;
+}
+
+.row:after {
+  content: "";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  height: 0;
+  line-height: 0;
+}
+
+[class*="col-"] {
+  float: left;
+  margin-left: 2%;
+  padding: 10px;
+}
+
+[class*="col-"]:first-child {
+  margin-left: 0;
+}
+
+.col-1  { width: 6.5%;  }
+.col-2  { width: 15%;   }
+.col-3  { width: 23.5%; }
+.col-4  { width: 32%;   }
+.col-5  { width: 40.5%; }
+.col-6  { width: 49%;   }
+.col-7  { width: 57.5%; }
+.col-8  { width: 66%;   }
+.col-9  { width: 74.5%; }
+.col-10 { width: 83%;   }
+.col-11 { width: 91.5%; }
+.col-12 { width: 100%;  }
