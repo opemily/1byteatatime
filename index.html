@@ -9,15 +9,17 @@
 </head>
 <body>
 	<main class="container">
-		<header>
-			<div id="logo" class="col-4">
-				<img src="images/logo.png" alt="1 Byte at a Time">
-				<h1>1 Byte at a Time</h1>
-				<h2>Apple Training, Lifestyle & Support</h2>
-			</div>
-			<nav class="col-8">
-				<a href="#about"> About Us</a> <a href="#services-offered">Services</a> <a href="#talk"> Testimonials</a> <a href="#contact">Contact Us</a> <a href="#useful-links">Links</a>
+		<div id="navbar">	
+			<nav>
+				<a href="#about"> About Us</a> <a href="#services-offered">Services</a> <a href="#talk"> Testimonials</a> <a href="#contact">Contact Us</a>
 			</nav>
+		</div> <!--NAVBAR-->
+		<header>
+			<div id="logo">
+				<img class="col-4"src="images/logo.png" alt="1 Byte at a Time">
+				<h1 class="col-8">1 Byte at a Time</h1>
+				<h2 class="col-8">Apple Training, Lifestyle & Support</h2>
+			</div>
 		</header>
 		<section id="about" class="row">
 			<h4 class="header">About 1 Byte at a Time</h4>
@@ -77,14 +79,8 @@
 	      			<label for="message">Message</label>
 	      			<textarea id="message" name="message" rows="10"></textarea>
 	      			<input type="submit" value="send">
-	    		</form>
-			
+	    		</form>	
 		</section><!--#contact-->
-		<section id="useful-links">
-			<h4 class="header"> Useful Links </h4>
-			<a href="mailto:emily@1byteatatime.com">Email Me</a>
-
-		</section> <!--#useful-links-->
 	</main> <!--.wrapper-->
 </body>
 </html>
