@@ -67,27 +67,29 @@ header{
 /*//////////NAVBAR//////////*/
 
 #navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 2;
-  text-align: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+ 	width: 100%;
+ 	z-index: 2;
+ 	text-align: center;
 }
 
 #navbar nav {
-  border-left: 1px solid #ccc;
+ 	border-left: 1px solid #ccc;
 }
 
 #navbar nav a {
-  display: inline-block;
-  font: bold 2em 'Share Tech Mono',Helvetica,sans-serif;
-  width: 15.4%;
-  margin: 0;
-  padding: 20px 0;
-  text-align: center;
-  border-right: 1px solid #ccc;
-  text-decoration: none;
+	background-color:rgba(244,244,244,.8);
+ 	display: inline-block;
+ 	font: bold 2em 'Share Tech Mono',Helvetica,sans-serif;
+ 	color: rgb(52,157,235);
+ 	width: 236px;
+  	margin: 0;
+  	padding: 22px 0;
+  	text-align: center;
+  	border-right: 1px solid #ccc;
+  	text-decoration: none;
 }
 
 /*//////////FORM//////////*/
@@ -97,13 +99,34 @@ header{
 	margin:0% 15%;
 }
 
-#contact form>label{
-	font: bold 1em 'Share Tech Mono',Helvetica,sans-serif;
+label{
+	font: bold 1.2em 'Share Tech Mono',Helvetica,sans-serif;
 	color: rgb(41,123,184);
 	text-shadow: 0 2px 3px #000;
 	text-align: justify;
 }
 
+input, textarea {
+  display: block;
+  width: 50%;
+  padding: 5px;
+  margin-bottom: 5px;
+  box-shadow: 0 3px 5px #ccc;
+  border: 1px solid #ccc;
+}
+
+input[type="submit"] {
+  margin-top: 5px;
+  width: 100px;
+  background:rgb(52,157,235);
+  color: white;
+  border-radius: 25px;
+  border: 0;
+}
+
+input[type="submit"]:hover {
+  background: grey;
+}
 /*//////////LAYOUT//////////*/
 
 * {
