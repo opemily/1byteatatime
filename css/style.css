@@ -3,7 +3,7 @@
 	src:url (../fonts/NEUROPOL.ttf);
 }
 
-/*//////////GLOBAL//////////*/
+/*////////// GLOBAL //////////*/
 
 body{
 	background:grey;
@@ -49,7 +49,7 @@ ul{
 }
 
 
-/*//////////LOGO//////////*/
+/*////////// LOGO //////////*/
 
 header{
 	margin-top: 3em;
@@ -71,7 +71,7 @@ header{
 	float:left;
 }
 
-/*//////////NAVBAR//////////*/
+/*////////// NAVBAR //////////*/
 
 
 #navbar {
@@ -94,7 +94,11 @@ header{
   	border-right: 1px solid #ccc;
 }
 
-#navbar li:last-child{
+#navbar li.menu-icon{
+	display:none;
+}
+
+#navbar li:nth-child(5){
 	border-right: none;
 }
 
@@ -106,7 +110,9 @@ header{
 #navbar a:hover, a:active{
 	color: rgb(0,82,115);
 }
-/*//////////SOCIAL//////////*/
+
+
+/*////////// SOCIAL //////////*/
 #social {
   position: fixed;
   top: 100px;
@@ -147,7 +153,7 @@ a.facebook:hover{ background-position: 0 -34px;}
 a.twitter {background: url(../images/twitter.png) no-repeat;}
 a.twitter:hover{ background-position: 0 -34px;}
 
-/*//////////FORM//////////*/
+/*////////// FORM //////////*/
 
 #contact form{
 	display:block;
@@ -182,7 +188,7 @@ input[type="submit"] {
 input[type="submit"]:hover {
   background: grey;
 }
-/*//////////LAYOUT//////////*/
+/*////////// LAYOUT //////////*/
 
 * {
   box-sizing: border-box;
@@ -264,18 +270,37 @@ input[type="submit"]:hover {
 
 	#navbar li{
 		width:200px;
-		font:1em;
+		font-size:1.5em;
 	}
 
+	.col-5, .col-7{
+		width:100%;
+		margin-left:0;
+		float:none;
+
+	}
+	.col-5 img{
+		height:auto;
+		width:auto;
+	}
 }
 
 @media only screen and (max-width:890px){
 	#navbar li{
-		width:190px;
-		font:.09em;
+		width:175px;
+		font-size: 1.2em;
 	}
 
 }
 
+@media only screen and (max-width:790px){
+	#navbar li.nav{
+		display:none;
+	}
 
+	#navbar li.menu-icon{
+		display:inline-block;
+		
+	}
+}
 
