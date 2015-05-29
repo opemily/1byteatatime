@@ -283,6 +283,9 @@ input[type="submit"]:hover {
 		height:auto;
 		width:auto;
 	}
+
+	input, textarea {
+		width:100%;
 }
 
 @media only screen and (max-width:890px){
@@ -294,13 +297,58 @@ input[type="submit"]:hover {
 }
 
 @media only screen and (max-width:790px){
+	#navbar{
+		background: none;
+	}
 	#navbar li.nav{
 		display:none;
 	}
 
 	#navbar li.menu-icon{
 		display:inline-block;
+		background-color:rgba(244,244,244,.8);
+	}
+
+	#social {
+		position:absolute;
+		top: 0;
+		right:50px;
 		
+}
+
+@media only screen and (max-width:670px){
+	header img{
+		height:200px;
+		width:200px;
+	}
+
+	header{
+		font-size: 1.2em;
+	}
+	
+}
+
+@media only screen and (max-width:570px){
+	header img{
+		height:150px;
+		width:150px;
+	}
+	
+	header{
+		font-size: 1em;
 	}
 }
 
+@media only screen and (max-width:450px){
+	header img{
+		height:100px;
+		width:100px;
+	}
+
+	#social {
+		position:absolute;
+		top: 0;
+		right:20px;
+	}
+		
+}
