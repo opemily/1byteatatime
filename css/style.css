@@ -1,6 +1,6 @@
 @font-face{
-	font-family:'neuropol x';
-	src:url (../fonts/neuropol.ttf);
+	font-family:'Neuropol';
+	src:url (../fonts/NEUROPOL.ttf);
 }
 
 /*//////////GLOBAL//////////*/
@@ -10,25 +10,29 @@ body{
 	font-size: 100%;
 }
 
-h4,h5{
-	font: bold 1.5em 'neuropol x',Helvetica,sans-serif;
-	text-shadow: 0 2px 3px #000;
-	text-align: justify;
+.col-5 img{
+	width:350px;
+	max-width: 100%;
+	margin-top: 35px;
+
 }
 
-h4{
-	text-indent: 1%;
+h4,h5{
+	font: bold 1.5em 'Neuropol',Helvetica,sans-serif;
+	text-shadow: 0 2px 3px #000;
+	text-align: justify;
 	color: rgb(0,173,243);
 }
+
 
  h5{
 	margin: 1% 17%;
-	color: rgb(0,173,243);
+	
 }
 
 p{
 	text-align: justify;
-	margin: 0px 15%;
+	margin: 0 5%;
 	font: 1em Helvetica,sans-serif;
 }
 
@@ -47,11 +51,11 @@ ul{
 
 /*//////////LOGO//////////*/
 
-#logo{
+header{
 	margin-top: 3em;
 }
 
-#logo img{
+header img{
 	width: 300px;
 	height: 300px;
 	margin-top: auto;
@@ -60,7 +64,7 @@ ul{
 }
 
 header{
-	font: bold 1.5em 'Neuropol x',Helvetica,sans-serif;
+	font: bold 1.5em 'Neuropol',Helvetica,sans-serif;
 	color: rgb(0,173,243);
 	text-shadow: 0 2px 3px #000;
 	text-align: center;
@@ -69,37 +73,44 @@ header{
 
 /*//////////NAVBAR//////////*/
 
+
 #navbar {
-	position: fixed;
-	top: 0;
-	left: 0;
- 	width: 100%;
- 	z-index: 2;
- 	text-align: center;
-}
-
-#navbar nav {
- 	border-left: 1px solid #ccc;
-}
-
-#navbar nav a {
+	list-style-type: none;
 	background-color:rgba(244,244,244,.8);
- 	display: inline-block;
- 	font: bold 1.75em 'Neuropol x',Helvetica,sans-serif;
- 	color: rgb(64,203,245);
- 	width: 236px;
+	position:fixed;
+ 	margin: 0;
+ 	padding:0;
+ 	z-index: 2;
+ 	overflow:hidden;
+}
+
+#navbar li{
+ 	float:left;
+ 	width: 240px;
   	margin: 0;
   	padding: 22px 0;
   	text-align: center;
+  	font: bold 1.75em 'Neuropol',Helvetica,sans-serif;
   	border-right: 1px solid #ccc;
-  	text-decoration: none;
 }
 
+#navbar li:last-child{
+	border-right: none;
+}
+
+#navbar a:link, a:visited{
+	color: rgb(64,203,245);
+	text-decoration: none;
+}
+
+#navbar a:hover, a:active{
+	color: rgb(0,82,115);
+}
 /*//////////SOCIAL//////////*/
 #social {
   position: fixed;
   top: 100px;
-  right: 100px;
+  right: 200px;
   width: 24px;
   z-index: 2;
 }
@@ -144,7 +155,7 @@ a.twitter:hover{ background-position: 0 -34px;}
 }
 
 label{
-	font: bold 1.2em 'Neuropol x',Helvetica,sans-serif;
+	font: bold 1.2em 'Neuropol',Helvetica,sans-serif;
 	color: rgb(0,173,243);
 	text-shadow: 0 2px 3px #000;
 	text-align: justify;
@@ -222,3 +233,49 @@ input[type="submit"]:hover {
 .col-12 { width: 100%;  }
 
 /*//////////RESPONSIVENESS//////////*/
+
+@media only screen and (max-width: 1300px){
+	#social {
+		position: absolute;
+		top: 82px;
+		right: 13%;
+		width: auto;
+	}
+	#social a {
+		display: inline-block;
+	}
+}
+
+@media only screen and (max-width: 1050px){
+	.container{
+		width:90%;
+	}
+	
+	#navbar{
+		width: 90%;
+  	}
+
+  	#navbar li{
+		width: 220px; 
+  	}
+}
+
+@media only screen and (max-width: 978px){
+
+	#navbar li{
+		width:200px;
+		font:1em;
+	}
+
+}
+
+@media only screen and (max-width:890px){
+	#navbar li{
+		width:190px;
+		font:.09em;
+	}
+
+}
+
+
+
