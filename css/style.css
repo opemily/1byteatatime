@@ -1,9 +1,11 @@
 @font-face{
-	font-family:'Neuropol';
-	src:url (../fonts/NEUROPOL.ttf);
+	font-family: 'Neuropol';
+	src:url(../fonts/neuropol.ttf);
 }
 
+
 /*////////// GLOBAL //////////*/
+
 
 body{
 	background:grey;
@@ -51,6 +53,7 @@ ul{
 
 /*////////// LOGO //////////*/
 
+
 header{
 	margin-top: 3em;
 }
@@ -70,6 +73,7 @@ header{
 	text-align: center;
 	float:left;
 }
+
 
 /*////////// NAVBAR //////////*/
 
@@ -113,12 +117,14 @@ header{
 
 
 /*////////// SOCIAL //////////*/
+
+
 #social {
   position: fixed;
   top: 100px;
   right: 200px;
   width: 24px;
-  z-index: 2;
+  z-index: 3;
 }
 
 #social a {
@@ -153,7 +159,9 @@ a.facebook:hover{ background-position: 0 -34px;}
 a.twitter {background: url(../images/twitter.png) no-repeat;}
 a.twitter:hover{ background-position: 0 -34px;}
 
+
 /*////////// FORM //////////*/
+
 
 #contact form{
 	display:block;
@@ -188,7 +196,19 @@ input[type="submit"] {
 input[type="submit"]:hover {
   background: grey;
 }
+
+input.error, textarea.error {
+  border: 1px solid red;
+}
+
+span.error {
+  display: none;
+  color: red;
+}
+
+
 /*////////// LAYOUT //////////*/
+
 
 * {
   box-sizing: border-box;
@@ -238,7 +258,9 @@ input[type="submit"]:hover {
 .col-11 { width: 91.5%; }
 .col-12 { width: 100%;  }
 
-/*//////////RESPONSIVENESS//////////*/
+
+/*////////// RESPONSIVENESS //////////*/
+
 
 @media only screen and (max-width: 1300px){
 	#social {
@@ -301,7 +323,16 @@ input[type="submit"]:hover {
 		background: none;
 	}
 	#navbar li.nav{
-		display:none;
+		display: none;
+    	width: 100%;
+    	border-left: 0;
+    	border-top: 1px dotted #ccc;
+    	text-align: left;
+    	padding: 10px;
+    	background-color:rgba(244,244,244,.8);
+    	color: rgb(64,203,245);
+    	text-decoration: none;
+    	clear: both;
 	}
 
 	#navbar li.menu-icon{
@@ -349,6 +380,15 @@ input[type="submit"]:hover {
 		position:absolute;
 		top: 0;
 		right:20px;
+	}
+		
+}
+
+@media only screen and (max-width:400px){
+	
+	#social a {
+		display:block;
+		right:10px;
 	}
 		
 }
