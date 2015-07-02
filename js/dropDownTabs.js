@@ -16,8 +16,6 @@ $(function(){
 
   // Tabs //
 
- $( "#tabs" ).tabs({
-      event: "mouseover"
-    });
+ $( "#tabs" ).tabs();
 
 }); // $function closure

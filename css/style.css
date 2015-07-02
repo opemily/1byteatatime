@@ -1,44 +1,42 @@
-@font-face{
-	font-family: 'Neuropol';
-	src:url(../fonts/neuropol.ttf);
-}
+@import url(http://fonts.googleapis.com/css?family=Orbitron:500);
+@import url(http://fonts.googleapis.com/css?family=Lato);
 
 
 /*////////// GLOBAL //////////*/
 
 
-body{
-	background:grey;
+body {
+	background: grey;
 	font-size: 100%;
 }
 
-.col-5 img{
-	width:350px;
+.col-5 img {
+	width: 350px;
 	max-width: 100%;
 	margin-top: 35px;
 
 }
 
-h4,h5{
-	font: bold 1.5em 'Neuropol',Helvetica,sans-serif;
+h4,h5 {
+	font: bold 1.4em 'Orbitron',Helvetica,sans-serif;
 	text-shadow: 0 2px 3px #000;
 	text-align: justify;
 	color: rgb(0,173,243);
 }
 
 
- h5{
+ h5 {
 	margin: 1% 17%;
 	
 }
 
-p{
+p {
 	text-align: justify;
 	margin: 0 5%;
-	font: 1em Helvetica,sans-serif;
+	font: 1.2em 'Lato',Helvetica,sans-serif;
 }
 
-ul{
+ul {
 	display: block;
 	text-align: justify;
 	margin: 1% 17%;
@@ -46,32 +44,36 @@ ul{
 	color:rgb(0,173,243);
 }
 
-#talk p{
+#talk p {
 	font-style: italic;
+}
+
+footer {
+	text-align: center;
 }
 
 
 /*////////// LOGO //////////*/
 
 
-header{
+header {
 	margin-top: 3em;
 }
 
-header img{
-	width: 300px;
-	height: 300px;
+header img {
+	width: 350px;
+	height: 350px;
 	margin-top: auto;
 	margin-bottom: 3em;
 	float:left;
 }
 
-header{
-	font: bold 1.5em 'Neuropol',Helvetica,sans-serif;
+header {
+	font: bold 1.4em 'Orbitron',Helvetica,sans-serif;
 	color: rgb(0,173,243);
 	text-shadow: 0 2px 3px #000;
 	text-align: center;
-	float:left;
+	float: left;
 }
 
 
@@ -80,64 +82,59 @@ header{
 
 #navbar {
 	list-style-type: none;
-	background-color:rgba(244,244,244,.8);
-	position:fixed;
+	background-color: rgba(244,244,244,.8);
+	position: fixed;
  	margin: 0;
- 	padding:0;
+ 	padding: 0;
  	z-index: 2;
- 	overflow:hidden;
+ 	overflow: hidden;
 }
 
-#navbar li{
- 	float:left;
+#navbar li {
+ 	float: left;
  	width: 240px;
   	margin: 0;
   	padding: 22px 0;
   	text-align: center;
-  	font: bold 1.75em 'Neuropol',Helvetica,sans-serif;
+  	font: bold 1.5em 'Orbitron',Helvetica,sans-serif;
   	border-right: 1px solid #ccc;
 }
 
-#navbar li.menu-icon{
-	display:none;
+#navbar li.menu-icon {
+	display: none;
 }
 
-#navbar li:nth-child(5){
+#navbar li:nth-child(5) {
 	border-right: none;
 }
 
-#navbar a:link, a:visited{
+#navbar a:link, a:visited {
 	color: rgb(64,203,245);
 	text-decoration: none;
 }
 
-#navbar a:hover, a:active{
+#navbar a:hover, a:active {
 	color: rgb(0,82,115);
+}
+
+#tabs li:focus {
+	outline:none;
+}
+
+#tabs li a:focus{
+	outline:none;
 }
 
 
 /*////////// SOCIAL //////////*/
 
-
 #social {
-  position: fixed;
-  top: 100px;
-  right: 200px;
-  width: 24px;
-  z-index: 3;
+	text-align: right;
 }
 
 #social a {
-  display: block;
-  width: 40px;
-  height: 40px;
-  text-indent: 100%;
-  white-space: nowrap;
-  overflow: hidden;
-}
-
-#social a {
-    display: ;
+	text-align: right;
+    display: inline-block;
     width: 24px;
     height: 24px;
     margin: 10px;
@@ -151,25 +148,25 @@ header{
 }
 
 a.apple { background: url(../images/apple.png) no-repeat;}
-a.apple:hover{ background-position: 0 -34px;}
+a.apple:hover { background-position: 0 -34px;}
 a.email { background: url(../images/email.png) no-repeat;}
-a.email:hover{ background-position: 0 -34px;}
+a.email:hover { background-position: 0 -34px;}
 a.facebook { background: url(../images/facebook.png) no-repeat;}
-a.facebook:hover{ background-position: 0 -34px;}
+a.facebook:hover { background-position: 0 -34px;}
 a.twitter {background: url(../images/twitter.png) no-repeat;}
-a.twitter:hover{ background-position: 0 -34px;}
+a.twitter:hover { background-position: 0 -34px;}
 
 
 /*////////// FORM //////////*/
 
 
-#contact form{
-	display:block;
-	margin:0% 15%;
+#contact form {
+	display: block;
+	margin: 0% 15%;
 }
 
-label{
-	font: bold 1.2em 'Neuropol',Helvetica,sans-serif;
+label {
+	font: bold 1.2em 'Orbitron',Helvetica,sans-serif;
 	color: rgb(0,173,243);
 	text-shadow: 0 2px 3px #000;
 	text-align: justify;
@@ -187,7 +184,7 @@ input, textarea {
 input[type="submit"] {
   margin-top: 5px;
   width: 100px;
-  background:rgb(0,173,243);
+  background: rgb(0,173,243);
   color: white;
   border-radius: 25px;
   border: 0;
@@ -262,21 +259,9 @@ span.error {
 /*////////// RESPONSIVENESS //////////*/
 
 
-@media only screen and (max-width: 1300px){
-	#social {
-		position: absolute;
-		top: 82px;
-		right: 13%;
-		width: auto;
-	}
-	#social a {
-		display: inline-block;
-	}
-}
-
-@media only screen and (max-width: 1050px){
+@media only screen and (max-width: 1050px) {
 	.container{
-		width:90%;
+		width: 90%;
 	}
 	
 	#navbar{
@@ -288,40 +273,43 @@ span.error {
   	}
 }
 
-@media only screen and (max-width: 978px){
+@media only screen and (max-width: 980px) {
 
 	#navbar li{
-		width:200px;
-		font-size:1.5em;
+		width: 200px;
+		font-size: 1.5em;
 	}
 
 	.col-5, .col-7{
-		width:100%;
-		margin-left:0;
-		float:none;
-
+		width: 100%;
+		float: none;
+		margin: 0 auto;
 	}
+
 	.col-5 img{
-		height:auto;
-		width:auto;
+		height: auto;
+		width: auto;
+		padding: 0 100px;
+
 	}
 
 	input, textarea {
-		width:100%;
+		width: 100%;
+	}
 }
 
-@media only screen and (max-width:890px){
+@media only screen and (max-width: 890px) {
 	#navbar li{
-		width:175px;
+		width: 175px;
 		font-size: 1.2em;
 	}
-
 }
 
-@media only screen and (max-width:790px){
+@media only screen and (max-width:790px) {
 	#navbar{
 		background: none;
 	}
+
 	#navbar li.nav{
 		display: none;
     	width: 100%;
@@ -329,25 +317,19 @@ span.error {
     	border-top: 1px dotted #ccc;
     	text-align: left;
     	padding: 10px;
-    	background-color:rgba(244,244,244,.8);
+    	background-color: rgba(244,244,244,.8);
     	color: rgb(64,203,245);
     	text-decoration: none;
     	clear: both;
 	}
 
 	#navbar li.menu-icon{
-		display:inline-block;
-		background-color:rgba(244,244,244,.8);
-	}
-
-	#social {
-		position:absolute;
-		top: 0;
-		right:50px;
-		
+		display: inline-block;
+		background-color: rgba(244,244,244,.8);
+	}		
 }
 
-@media only screen and (max-width:670px){
+@media only screen and (max-width:670px) {
 	header img{
 		height:200px;
 		width:200px;
@@ -356,11 +338,15 @@ span.error {
 	header{
 		font-size: 1.2em;
 	}
-	
+
+	#social{
+		text-align: center;
+	}
 }
 
-@media only screen and (max-width:570px){
+@media only screen and (max-width:570px) {
 	header img{
+		margin-top: 50px;
 		height:150px;
 		width:150px;
 	}
@@ -370,25 +356,14 @@ span.error {
 	}
 }
 
-@media only screen and (max-width:450px){
+@media only screen and (max-width:450px) {
 	header img{
 		height:100px;
 		width:100px;
 	}
 
-	#social {
-		position:absolute;
-		top: 0;
-		right:20px;
-	}
-		
 }
 
-@media only screen and (max-width:400px){
+@media only screen and (max-width:400px) {
 	
-	#social a {
-		display:block;
-		right:10px;
-	}
-		
 }
